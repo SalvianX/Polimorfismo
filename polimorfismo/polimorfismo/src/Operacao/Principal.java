@@ -14,7 +14,7 @@ public class Principal {
 				+ "Digite D para realizar a divisão;\r\n"
 				+ "Digite 0 (zero) para SAIR;");
 		
-	    scan = new Scanner(System.in);
+	        Scanner scan = new Scanner(System.in);
 		opcao = scan.next();
 		
 		
@@ -31,7 +31,10 @@ public class Principal {
 		String num = "";
 		List<Float> numeros = new ArrayList<Float>();
 		while(!num.equals("0")) {
-			num = scan.next ();
+			//num = scan.next ();
+			num = jOptionPane.showIputDialog("Digite o primeiro:");
+			if(!num.equals("0")){
+				numeros.add(Float.parsefloat(num));
 
 			}
 					
