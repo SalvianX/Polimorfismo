@@ -37,6 +37,15 @@ public class Principal {
 				numeros.add(Float.parsefloat(num));
 
 			}
+			if(numeros.size()==2) {
+				op.calcular(numeros.get(0), numeros.get(1));
+			}
+			else if(numeros.size()==3) {
+				op.calcular(numeros.get(0), numeros.get(1).numeros.get(2));
+			}
+			else if(numeros.size()==3) {
+				op.calcular(numeros)
+			}
 					
 		}
 			
