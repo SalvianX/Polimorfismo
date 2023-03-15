@@ -1,4 +1,4 @@
-package Operacao;
+package operacao;
 
 import java.util.List;
 
@@ -8,6 +8,7 @@ public class Adicao extends Operacao{
 	}
 	
 	public void calcular(float num1, float num2, float num3) {
+		System.out.println(num1+num2+num3);
 
     } 
 	
